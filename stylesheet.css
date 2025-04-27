@@ -14,7 +14,7 @@ h1 {
   margin-block-end: 0;
 }
 
-h2 {
+.main-section h2 {
   font-family: "Lexend Deca", sans-serif;
   font-weight: normal;
   color: white;
@@ -22,11 +22,25 @@ h2 {
   margin: 4% 0 0 4%;
 }
 
+.menu-section h2 {
+  color: white;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  text-align: center;
+  padding-top: 24px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
 p {
   font-family: "Lexend Deca", sans-serif;
   color: white;
   font-size: 18px;
   margin-block-start: 0;
+}
+
+.main-section p {
   margin: 2% 4%;
 }
 
@@ -47,6 +61,7 @@ li {
   justify-content: space-evenly;
   padding: 2% 5%;
 }
+
 .logo-and-title {
   display: flex;
   align-items: center;
@@ -68,7 +83,88 @@ li {
 .with-fb-map {
   display: flex;
 }
+
 .main-section {
   display: flex;
   flex-direction: column;
+  background-color: rgba(100, 100, 130, 0.8);
+}
+
+.main-section a {
+  color: white;
+}
+
+.map {
+  padding: 20px;
+  background-color: rgba(100, 100, 130, 0.8);
+}
+
+.menu-section {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(100, 100, 130, 0.8);
+}
+
+.big-screen {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-entry {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 12px 12px 0 12px;
+}
+
+.menu-entry p {
+  color: white;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 14px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.price {
+  text-align: end;
+}
+
+.with-detail {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-detail p {
+  color: white;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 10px;
+}
+
+@media (min-width: 668px) {
+  .menu-section {
+    justify-content: space-between;
+    width: 70%;
+    padding: 0 15%;
+  }
+  .menu-entry p {
+    font-size: 16px;
+  }
+
+  .menu-detail p {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .menu-section {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+  }
+
+  .big-screen {
+    width: 45%;
+    padding: 0 5% 3% 5%;
+  }
 }
