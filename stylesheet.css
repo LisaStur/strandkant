@@ -8,7 +8,7 @@ h1 {
   color: white;
   font-family: "Lexend Deca", sans-serif;
   font-weight: normal;
-  font-size: 60px;
+  font-size: 40px;
   text-shadow: 2px 2px black;
   margin-block-start: 0;
   margin-block-end: 0;
@@ -36,12 +36,16 @@ h1 {
 p {
   font-family: "Lexend Deca", sans-serif;
   color: white;
-  font-size: 18px;
+  font-size: 16px;
   margin-block-start: 0;
 }
 
 .main-section p {
   margin: 2% 4%;
+}
+
+.hide-logo {
+  display: none;
 }
 
 ul {
@@ -58,7 +62,7 @@ li {
 .header {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   padding: 2% 5%;
 }
 
@@ -82,12 +86,18 @@ li {
 
 .with-fb-map {
   display: flex;
+  flex-direction: column;
+  align-items: space-evenly;
+  background-color: rgba(100, 100, 130, 0.8);
+  margin: 0 0 5px 0;
 }
 
 .main-section {
+  width: 60%;
+}
+.fb {
+  width: 40%;
   display: flex;
-  flex-direction: column;
-  background-color: rgba(100, 100, 130, 0.8);
 }
 
 .main-section a {
@@ -141,6 +151,22 @@ li {
 }
 
 @media (min-width: 668px) {
+  h1 {
+    font-size: 50px;
+  }
+  p {
+    font-size: 18px;
+  }
+  .with-fb-map {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .hide-logo {
+    display: flex;
+    height: 55px;
+  }
+
   .menu-section {
     justify-content: space-between;
     width: 70%;
@@ -156,6 +182,9 @@ li {
 }
 
 @media (min-width: 1024px) {
+  h1 {
+    font-size: 60px;
+  }
   .menu-section {
     flex-direction: row;
     justify-content: space-between;
@@ -166,5 +195,9 @@ li {
   .big-screen {
     width: 45%;
     padding: 0 5% 3% 5%;
+  }
+  .hide-logo {
+    display: flex;
+    height: auto;
   }
 }
